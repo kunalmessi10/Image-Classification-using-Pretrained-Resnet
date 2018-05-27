@@ -5,7 +5,8 @@ In practice, very few people train an entire Convolutional Network from scratch 
 
 These two major transfer learning scenarios look as follows:
 
-Finetuning the convnet: Instead of random initializaion, we initialize the network with a pretrained network, like the one that is trained on imagenet 1000 dataset. Rest of the training looks as usual.
-ConvNet as fixed feature extractor: Here, we will freeze the weights for all of the network except that of the final fully connected layer. This last fully connected layer is replaced with a new one with random weights and only this layer is trained.
+1. Finetuning the convnet: Instead of random initializaion, we initialize the network with a pretrained network, like the one that is trained on imagenet 1000 dataset. Rest of the training looks as usual.
+
+2. ConvNet as fixed feature extractor: Here, we will freeze the weights for all of the network except that of the final fully connected layer. This last fully connected layer is replaced with a new one with random weights and only this layer is trained.
 
 In this repo, I have used a subset of Imagenet ie the Hymenoptera dataset. I have used a pretrained resnet18 model.
